@@ -4,6 +4,7 @@ namespace Chessie.ErrorHandling
 open System
 
 /// Represents the result of a computation.
+[<Serializable>]
 type Result<'TSuccess, 'TMessage> = 
     /// Represents the result of a successful computation.
     | Ok of 'TSuccess * 'TMessage list
